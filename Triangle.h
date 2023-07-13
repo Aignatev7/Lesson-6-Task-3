@@ -1,4 +1,6 @@
 #pragma once
+#include "Figure.h"
+
 
 class Triangle : public Figure// класс Треугольник
 {
@@ -30,16 +32,12 @@ public:
 		corner_C = 0;
 	}
 
-	int get_side_a() { return side_a; }
-	int get_side_b() { return side_b; }
-	int get_side_c() { return side_c; }
-	int get_corner_A() { return corner_A; }
-	int get_corner_B() { return corner_B; }
-	int get_corner_C() { return corner_C; }
+	int get_side_a();
+	int get_side_b();
+	int get_side_c();
+	int get_corner_A();
+	int get_corner_B();
+	int get_corner_C();
 
-	virtual void print_myself() {
-		std::cout << get_figure_name() << "\nСтороны: " << "a=" << get_side_a() << " b=" << get_side_b()
-			<< " c=" << get_side_c() << "\n" << "Углы: " << "А=" << get_corner_A()
-			<< " B=" << get_corner_B() << " C=" << get_corner_C() << "\n" << std::endl;
-	}
+	virtual void print_myself();
 };

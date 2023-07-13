@@ -7,13 +7,9 @@ protected:
 	std::string figure_name;
 
 public:
-	Figure() {
-		figure_name = "Фигура";
-	}
+	Figure();
 
-	std::string get_figure_name() { return figure_name; }
+	std::string get_figure_name();
 
-	virtual void print_myself() {
-		std::cout << get_figure_name() << std::endl;
-	}
+	virtual void print_myself();
 };
