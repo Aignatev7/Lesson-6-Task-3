@@ -23,14 +23,7 @@ public:
 		corner_C = 70;
 	}
 
-	Triangle(int side_a, int side_b, int side_c, int corner_A, int corner_B, int corner_C) {
-		side_a = 0;
-		side_b = 0;
-		side_c = 0;
-		corner_A = 0;
-		corner_B = 0;
-		corner_C = 0;
-	}
+	Triangle(int side_a, int side_b, int side_c, int corner_A, int corner_B, int corner_C);
 
 	int get_side_a();
 	int get_side_b();

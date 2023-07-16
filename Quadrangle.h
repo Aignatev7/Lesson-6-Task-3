@@ -26,10 +26,6 @@ public:
 	int get_corner_C();
 	int get_corner_D();
 
-	virtual void print_myself() {
-		std::cout << get_figure_name() << "\nСтороны: " << "a=" << get_side_a() << " b=" << get_side_b()
-			<< " c=" << get_side_c() << " d=" << get_side_d() << "\n" << "Углы: " << "А=" << get_corner_A()
-			<< " B=" << get_corner_B() << " C=" << get_corner_C() << " D=" << get_corner_D() << "\n" << std::endl;
-	}
+	virtual void print_myself();
 };
 
